@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <div style="margin:0 auto; width:330px; border:1px solid black; padding:10px">
+        Original Data: &nbsp;&nbsp;&nbsp;
+        <input id="text" />
+      <p>
+        From:
+        <select id="from">
+          <option value="bin">Binary</option>
+          <option value="hex">Hexadecimal</option>
+          <option value="dec">Decimal</option>
+          <option value="asc">ASCII</option>
+        </select>
+        &nbsp;&nbsp;To:
+        <select id="con">
+          <option value="bin">Binary</option>
+          <option value="dec">Decimal</option>
+          <option value="inv">Inverted</option>
+          <option value="asc">ASCII</option>
+          <option value="hex">Hexadecimal &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
+        </select>
+        <br>
+        <span style="display:inline-block; width:100px; height:20px"></span>
+        <button id="swap" ; style="background-color:blue; color:white" ;>
+          Swap <i class="fa fa-exchange"></i>
+        </button>
+      </p>
+      <p>
+        Converted Data:
+        <input id="converted" />
+      </p>
+      <button id="convert"; style="background-color:red; color:white";>CONVERT <i class="fa fa-chevron-right"></i></button>
+      <span style="display:inline-block; width:92px;"></span>
+      <button id="clear"; style="background-color:green; color:white";>Clear <i class="fa fa-eraser"></i></button>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
